@@ -43,4 +43,29 @@ public class UserRegistrationTest {
         //Asserting The Result As Boolean Type True Or False
         Assertions.assertEquals(false, result);
     }
+    //UC3
+    //Test To Valid Email Starts With Small Letter
+    @Test
+    public void givenEmail_StartsWithSmallLetter_ReturnTrue() {
+        //Checking Validate Email With Pattern And Storing In result
+        boolean result = userRegistration.validateemail("gopi1998@gmail.com.in");
+        //Asserting The Result As Boolean Type True Or False
+        Assertions.assertEquals(true, result);
+    }
+    //Test To Valid Email Starts With Cap Letter
+    @Test
+    public void givenEmail_StartsWithCapLetter_ReturnFalse() {
+        //Checking Validate Email With Pattern And Storing In result
+        boolean result = userRegistration.validateemail("Gopi1998@gmail.com");
+        //Asserting The Result As Boolean Type True Or False
+        Assertions.assertEquals(false, result);
+    }
+    //Test To Valid Email Ends With .Com
+    @Test
+    public void givenEmail_EndsWithCom_ReturnTrue() {
+        //Checking Validate Email With Pattern And Storing In result
+        boolean result = userRegistration.validateemail("gopi1998@gmail.com");
+        //Asserting The Result As Boolean Type True Or False
+        Assertions.assertEquals(true, result);
+    }
 }
