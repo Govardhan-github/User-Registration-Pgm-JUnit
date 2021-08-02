@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.UserRegistrationTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2021-08-02T19:41:21" hostname="DESKTOP-TK8JRTA" time="0.145">
+<testsuite name="com.bridgelabz.UserRegistrationTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2021-08-02T19:44:10" hostname="DESKTOP-TK8JRTA" time="0.186">
   <properties/>
-  <testcase name="givenPassword_DoesNotContainsEightDigits_ReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.061"/>
+  <testcase name="givenPassword_DoesNotContainsEightDigits_ReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.046"/>
   <testcase name="givenPhoneNumber_StartWithCountryCode_ReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.002"/>
-  <testcase name="givenPhoneNumber_DoesNotHave10Numbers_ReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.005"/>
-  <testcase name="givenLastName_Return_True()" classname="com.bridgelabz.UserRegistrationTest" time="0.002"/>
-  <testcase name="givenPassword_ShouldHaveOneUpperCase_AndContainsEightDigits_ReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.004"/>
-  <testcase name="givenFirstName_Return_False()" classname="com.bridgelabz.UserRegistrationTest" time="0.002"/>
-  <testcase name="givenFirstName_Return_True()" classname="com.bridgelabz.UserRegistrationTest" time="0.011"/>
-  <testcase name="givenEmail_StartsWithCapLetter_ReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.003"/>
-  <testcase name="givenEmail_EndsWithCom_ReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.006"/>
+  <testcase name="givenPhoneNumber_DoesNotHave10Numbers_ReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.007"/>
+  <testcase name="givenLastName_Return_True()" classname="com.bridgelabz.UserRegistrationTest" time="0.005"/>
+  <testcase name="givenPassword_ShouldNotHaveOneNumericNbr_AndContainsEightDigits_ReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.002"/>
+  <testcase name="givenPassword_ShouldHaveOneUpperCase_AndContainsEightDigits_ReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.003"/>
+  <testcase name="givenFirstName_Return_False()" classname="com.bridgelabz.UserRegistrationTest" time="0.021"/>
+  <testcase name="givenFirstName_Return_True()" classname="com.bridgelabz.UserRegistrationTest" time="0.015"/>
+  <testcase name="givenEmail_StartsWithCapLetter_ReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.002"/>
+  <testcase name="givenPassword_ShouldHaveOneNumericNbr_AndContainsEightDigits_ReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.002"/>
+  <testcase name="givenEmail_EndsWithCom_ReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.002"/>
   <testcase name="givenPhoneNumber_DoesHave10Numbers_ReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.002"/>
-  <testcase name="givenPassword_ShouldNotHaveOneUpperCase_AndContainsEightDigits_ReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenPassword_ShouldNotHaveOneUpperCase_AndContainsEightDigits_ReturnFalse()" classname="com.bridgelabz.UserRegistrationTest" time="0.004"/>
   <testcase name="givenLastName_Return_False()" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="givenPassword_ContainsEightDigits_ReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.003"/>
+  <testcase name="givenPassword_ContainsEightDigits_ReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.005"/>
   <testcase name="givenEmail_StartsWithSmallLetter_ReturnTrue()" classname="com.bridgelabz.UserRegistrationTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
