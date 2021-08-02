@@ -26,4 +26,21 @@ public class UserRegistrationTest {
         //Asserting The Result As Boolean Type True Or False
         Assertions.assertEquals(false, result);
     }
+    //UC2
+    //Test To Valid LastName Starts With Cap Letter And It Has Min 3 Letters
+    @Test
+    public void givenLastName_Return_True() {
+        //Checking Validate LastName With Pattern And Storing In result
+        userRegistration.validateLastName("Reddy");
+        boolean result = userRegistration.validateFirstName("Reddy");
+        //Asserting The Result As Boolean Type True Or False
+        Assertions.assertEquals(true, result);
+    }
+    @Test
+    public void givenLastName_Return_False() {
+        //Checking Validate LastName With Pattern And Storing In result
+        boolean result = userRegistration.validateLastName("reddy");
+        //Asserting The Result As Boolean Type True Or False
+        Assertions.assertEquals(false, result);
+    }
 }
