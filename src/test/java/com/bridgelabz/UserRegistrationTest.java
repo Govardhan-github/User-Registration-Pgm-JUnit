@@ -93,4 +93,22 @@ public class UserRegistrationTest {
         //Asserting The Result As Boolean Type True Or False
         Assertions.assertEquals(true, result);
     }
+
+    //UC5
+    //Test To Password Does Have 8Characters Return True
+    @Test
+    public void givenPassword_ContainsEightDigits_ReturnTrue() {
+        //Checking Validate Password With Pattern And Storing In result
+        boolean result = userRegistration.validatePassword("Gopi$145");
+        //Asserting The Result As Boolean Type True Or False
+        Assertions.assertEquals(true,result);
+    }
+    //Test To Password Does Not Have 8Characters Return False
+    @Test
+    public void givenPassword_DoesNotContainsEightDigits_ReturnFalse() {
+        //Checking Validate Password With Pattern And Storing In result
+        boolean result = userRegistration.validatePassword("gopi$144");
+        //Asserting The Result As Boolean Type True Or False
+        Assertions.assertEquals(false,result);
+    }
 }

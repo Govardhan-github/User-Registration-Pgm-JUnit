@@ -29,4 +29,10 @@ public class UserRegistration {
         String Number_pattern = "^[9][1][ ][6-9]{1}[0-9]{9}$";
         return pattern.matches(Number_pattern, PhoneNumber);//Matching The Phone Number Pattern And Phone Number And Returning It
         }
+    //Declaring Valid Password Method
+    public boolean validatePassword(String Password) {
+        //Here Declaring The Password Pattern
+        String Password_pattern = "^(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z])(?=.*[@#$%!]).{8,}";
+        return pattern.matches(Password_pattern,Password);
     }
+}
