@@ -111,4 +111,22 @@ public class UserRegistrationTest {
         //Asserting The Result As Boolean Type True Or False
         Assertions.assertEquals(false,result);
     }
+
+    //UC6 Password Should Contain One UpperCase Letter
+    //Test To Password Does Have One UpperCase And 8 Characters Return True
+    @Test
+    public void givenPassword_ShouldHaveOneUpperCase_AndContainsEightDigits_ReturnTrue() {
+        //Checking Validate Password With Pattern And Storing In result
+        boolean result = userRegistration.validatePassword("Gopi$144");
+        //Asserting The Result As Boolean Type True Or False
+        Assertions.assertEquals(true,result);
+    }
+    //Test To Password Does Not Have UpperCase And 8 Characters Return False
+    @Test
+    public void givenPassword_ShouldNotHaveOneUpperCase_AndContainsEightDigits_ReturnFalse() {
+        //Checking Validate Password With Pattern And Storing In result
+        boolean result = userRegistration.validatePassword("gopi$144");
+        //Asserting The Result As Boolean Type True Or False
+        Assertions.assertEquals(false,result);
+    }
 }
