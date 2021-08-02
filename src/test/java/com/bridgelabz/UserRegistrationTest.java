@@ -68,4 +68,29 @@ public class UserRegistrationTest {
         //Asserting The Result As Boolean Type True Or False
         Assertions.assertEquals(true, result);
     }
+    //UC4
+    //Test To Phone Number Start With Country Code
+    @Test
+    public void givenPhoneNumber_StartWithCountryCode_ReturnTrue() {
+        //Checking Validate Phone Number With Pattern And Storing In result
+        boolean result = userRegistration.validatePhoneNumber("91 9666110767");
+        //Asserting The Result As Boolean Type True Or False
+        Assertions.assertEquals(true, result);
+    }
+    //Test To Phone Number Does Not Have 10Numbers Return False
+    @Test
+    public void givenPhoneNumber_DoesNotHave10Numbers_ReturnFalse() {
+        //Checking Validate Phone Number With Pattern And Storing In result
+        boolean result = userRegistration.validatePhoneNumber("91 966611077");
+        //Asserting The Result As Boolean Type True Or False
+        Assertions.assertEquals(false, result);
+    }
+    //Test To Phone Number Does Have 10Numbers Return True
+    @Test
+    public void givenPhoneNumber_DoesHave10Numbers_ReturnTrue() {
+        //Checking Validate Phone Number With Pattern And Storing In result
+        boolean result = userRegistration.validatePhoneNumber("91 9666110767");
+        //Asserting The Result As Boolean Type True Or False
+        Assertions.assertEquals(true, result);
+    }
 }
