@@ -1,4 +1,2 @@
-com/bridgelabz/UR1Test.java
- com.bridgelabz.UR1Test
 com/bridgelabz/UserRegistrationTest.java
  com.bridgelabz.UserRegistrationTest
