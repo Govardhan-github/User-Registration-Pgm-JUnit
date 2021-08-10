@@ -1,6 +1,0 @@
-com/bridgelabz/UserRegistration.java
- com.bridgelabz.UserRegistration
-com/bridgelabz/UserRegistration1.java
- com.bridgelabz.UserRegistration1
-com/bridgelabz/UserRegistrationException.java
- com.bridgelabz.UserRegistrationException
